@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getAllSlugs, getPostBySlug } from "@/lib/posts";
-import { renderMDX } from "@/lib/mdx";
+import { getAllSlugs, getPostBySlug } from "@/features/posts/lib/posts";
+import { renderMDX } from "@/features/posts/lib/mdx";
 import { AUTHOR_NAME, SITE_URL } from "@/lib/constants";
 
 export async function generateStaticParams() {

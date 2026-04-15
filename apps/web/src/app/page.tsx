@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getAllPosts } from "@/lib/posts";
+import { getAllPosts } from "@/features/posts/lib/posts";
 import { SITE_DESCRIPTION, SITE_NAME } from "@/lib/constants";
 
 export default function Home() {

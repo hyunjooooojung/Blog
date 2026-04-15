@@ -2,7 +2,7 @@ import { compileMDX } from "next-mdx-remote/rsc";
 import rehypePrettyCode from "rehype-pretty-code";
 import rehypeSlug from "rehype-slug";
 import type { Options } from "rehype-pretty-code";
-import CodeBlock from "@/components/CodeBlock";
+import CodeBlock from "@/features/posts/components/CodeBlock";
 
 const prettyCodeOptions: Options = {
   theme: "github-dark-default",
