@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { getAllSlugs, getPostBySlug } from "@/features/posts/lib/posts";
 import { renderMDX } from "@/features/posts/lib/mdx";
 import { AUTHOR_NAME, SITE_URL } from "@/lib/constants";
+import { ViewCounter } from "@/features/posts/components/ViewCounter";
+import { LikeButton } from "@/features/posts/components/LikeButton";
 
 export async function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -80,6 +82,11 @@ export default async function PostPage({
                   {tag}
                 </span>
               ))}
+            </div>
+            <div className="flex items-center gap-2 mt-4">
+              <ViewCounter slug={slug} />
+              <span className="text-muted-foreground/40">·</span>
+              <LikeButton slug={slug} />
             </div>
           </header>
 
