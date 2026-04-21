@@ -17,12 +17,19 @@ Next.js 16 + Supabase로 만든 개인 개발 블로그.
 
 ### 환경변수 설정
 
-`apps/web/.env.local` 파일 생성:
+`apps/web/.env.example`을 복사해 `apps/web/.env.local` 생성:
 
 ```bash
-NEXT_PUBLIC_SUPABASE_URL=https://xxxxx.supabase.co
-SUPABASE_SERVICE_ROLE_KEY=eyJ...
+cp apps/web/.env.example apps/web/.env.local
 ```
+
+필요한 환경변수:
+
+| 변수 | 설명 |
+|------|------|
+| `NEXT_PUBLIC_SUPABASE_URL` | Supabase 프로젝트 URL |
+| `SUPABASE_SERVICE_ROLE_KEY` | service role 키 — 서버 전용, 절대 공개하지 말 것 |
+| `VISITOR_HASH_SALT` | 조회수/좋아요 dedup용 해시 salt — 임의 문자열 |
 
 ### 개발 서버 실행
 

@@ -28,6 +28,7 @@ function setStoredLike(slug: string) {
 
 export function LikeButton({ slug }: LikeButtonProps) {
   const [count, setCount] = useState<number | null>(null);
+  // localStorage를 즉시 UX 힌트로만 사용 — 서버 응답 도착 후 덮어씀
   const [liked, setLiked] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -36,7 +37,10 @@ export function LikeButton({ slug }: LikeButtonProps) {
 
     fetch(`/api/likes/${slug}`)
       .then((res) => res.json())
-      .then((data: { count: number }) => setCount(data.count))
+      .then((data: { count: number; liked: boolean }) => {
+        setCount(data.count);
+        setLiked(data.liked); // 서버가 권위 있는 liked 상태
+      })
       .catch(() => setCount(0));
   }, [slug]);
 

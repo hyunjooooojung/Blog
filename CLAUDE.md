@@ -54,7 +54,9 @@ tags: ["tag1", "tag2"]   # 필수 (빈 배열 가능)
 
 ## 개발 현황
 - **Phase 1 완료**: Next.js 블로그 코어 (페이지, Markdown 렌더링, 다크모드)
-- **Phase 2 완료**: 조회수/좋아요 (Supabase + API Routes)
-- **Phase 3 완료**: 댓글 시스템 (Supabase + bcryptjs, 익명 + 1-depth 대댓글)
-- **Phase 4 완료**: 검색 (클라이언트 사이드), SEO (sitemap/robots/OG/JSON-LD), RSS 피드, 애니메이션/인터랙션
-- **Phase 5 완료**: TOC (IntersectionObserver), OG 이미지 (next/og)
+- **Phase 2 완료**: 조회수/좋아요 (Supabase + API Routes + dedup + slug 검증)
+- **Phase 3 미구현**: 댓글 시스템 (Supabase + bcryptjs, 익명 + 1-depth 대댓글)
+- **Phase 4 미구현**: 검색 (클라이언트 사이드), SEO (sitemap/robots/OG/JSON-LD), RSS 피드, 애니메이션/인터랙션
+- **Phase 5 미구현**: TOC (IntersectionObserver), OG 이미지 (next/og)
+
+> ⚠️ Phase 3~5는 계획됨. 코드에 존재하지 않는 컴포넌트/라우트를 import하지 말 것.
