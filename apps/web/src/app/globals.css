@@ -147,3 +147,10 @@ body {
     @apply font-sans;
   }
 }
+/* 본문 이미지: 투명 배경 SVG 다이어그램이 다크 모드에서도 읽히도록 흰 배경 고정 */
+.prose img {
+  background-color: white;
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin-inline: auto;
+}
