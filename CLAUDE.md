@@ -48,12 +48,14 @@ pnpm --filter web dev       # Next.js (http://localhost:3000)
 title: "글 제목"         # 필수
 description: "글 요약"   # 필수
 date: "YYYY-MM-DD"       # 필수
+category: "Python"       # 필수 — 글당 하나. 없으면 "기타"로 분류됨
 tags: ["tag1", "tag2"]   # 필수 (빈 배열 가능)
 ---
 ```
 
 ## 개발 현황
 - **Phase 1 완료**: Next.js 블로그 코어 (페이지, Markdown 렌더링, 다크모드)
+- **카테고리 완료**: frontmatter `category` 기반 헤더 드롭다운 + `/posts/category/[category]` 정적 라우트
 - **Phase 2 완료**: 조회수/좋아요 (Supabase + API Routes + dedup + slug 검증)
 - **Phase 3 미구현**: 댓글 시스템 (Supabase + bcryptjs, 익명 + 1-depth 대댓글)
 - **Phase 4 미구현**: 검색 (클라이언트 사이드), SEO (sitemap/robots/OG/JSON-LD), RSS 피드, 애니메이션/인터랙션

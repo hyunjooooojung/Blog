@@ -2,6 +2,7 @@
 title: "첫 번째 글"
 description: "Next.js + Supabase 블로그를 직접 만들면서 배운 것들"
 date: "2026-04-14"
+category: "ETC"
 tags: ["Next.js", "TypeScript", "블로그"]
 ---
 

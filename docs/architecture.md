@@ -64,6 +64,7 @@ blog/
 │       │   │   ├── about/page.tsx
 │       │   │   ├── posts/
 │       │   │   │   ├── page.tsx
+│       │   │   │   ├── category/[category]/page.tsx  # 카테고리별 글 목록
 │       │   │   │   └── [slug]/
 │       │   │   │       ├── page.tsx
 │       │   │   │       └── opengraph-image.tsx

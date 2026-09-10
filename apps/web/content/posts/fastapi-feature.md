@@ -2,6 +2,7 @@
 title: "FastAPI의 주요 특징 정리"
 description: "FastAPI 공식 문서의 Features 페이지를 바탕으로 FastAPI, Starlette, Pydantic의 특징을 정리합니다"
 date: "2026-08-05"
+category: "Backend"
 tags: ["FastAPI", "Python", "Backend"]
 ---
 

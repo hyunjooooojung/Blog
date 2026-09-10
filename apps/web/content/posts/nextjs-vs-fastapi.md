@@ -2,6 +2,7 @@
 title: "FastAPI 개발자가 보는 Next.js"
 description: "FastAPI와 Next.js의 구조적 유사점과 차이점을 비교합니다"
 date: "2026-04-10"
+category: "Frontend"
 tags: ["Next.js", "FastAPI", "TypeScript", "Python"]
 ---
 

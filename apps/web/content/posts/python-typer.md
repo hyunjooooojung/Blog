@@ -2,6 +2,7 @@
 title: "Typer로 Python CLI 만들기"
 description: "FastAPI를 만든 저자가 만든 CLI 프레임워크 Typer를 타입 힌트 관점에서 정리합니다"
 date: "2026-09-02"
+category: "Backend"
 tags: ["Python", "Typer", "CLI"]
 ---
 
